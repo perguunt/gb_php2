@@ -1,0 +1,15 @@
+.mainDiv{
+    border: #00A2DC solid 1px;
+    margin: 5px;
+    padding: 2px;
+}
+
+.previewPhoto{
+    border: #1DA1F2 solid 1px;
+    margin: 2px;
+    padding: 1px;
+    display: inline-block;
+/*    float: left;
+    width: 300px;
+    height: 300px;*/
+}
