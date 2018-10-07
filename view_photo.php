@@ -32,12 +32,6 @@
     $content .= "<img width='1000' src='$path_to_big'><br>";
     $content .= "Количество просмотров:" . $count_of_view;
 
-/*    $tpl = file_get_contents("photo.tpl");
-    $pattern = array('/{title}/', '/{content}/');
-    //$pattern = array('/{content}/');
-    $replace = array($title, $content);
-    echo preg_replace($pattern, $replace, $tpl);*/
-
 // подгружаем и активируем авто-загрузчик Twig-а
 require_once 'Twig/Autoloader.php';
 Twig_Autoloader::register();
@@ -59,8 +53,7 @@ try {
         'title' => "Фото $img_id",
         'content' => $content,
     ));
-    //print $content_for_tamplate;
-    echo "<img width='1000' src='$path_to_big'><br>";
+    print $content_for_tamplate;
 
 } catch (Exception $e) {
     die ('ERROR: ' . $e->getMessage());

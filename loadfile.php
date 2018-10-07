@@ -20,9 +20,9 @@ function resize_photo ($filename, $resizing_percent, $file_to_save) {
     imagecopyresampled($image_p, $image, 0, 0, 0, 0, $new_width, $new_height, $width, $height);
 
     // вывод
-    if (!file_exists($file_to_save)) {
+/*    if (!file_exists($file_to_save)) {
         die("создайте папку files/small/");
-    }
+    }*/
     imagejpeg($image_p, $file_to_save, 100);
 }
 
